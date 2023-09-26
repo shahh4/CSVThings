@@ -1,6 +1,12 @@
 # utils.py
 import csv
 def read_CSV_file():
+    '''
+    Read a particular CSV file into a list.
+    monroe-county-crash-data2003-to-2015.csv
+    The first row is assumed to be a header and is skipped
+    @return the list
+    '''
     csv_data = []
     with open("monroe-county-crash-data2003-to-2015.csv", newline='') as f:
         reader = csv.reader(f, delimiter=',')
